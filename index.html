@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid border box" style="width: 450px;">
+        <div class="">
+            <h4>To-Do List V2</h4>
+            <div class="row gap-3 mt-4 px-3 first">
+                <input id="inputValue" class="col form-control" type="text" placeholder="Enter a task">
+                <button class="col btn">Add</button>
+            </div>
+            <p id="error" class="text-start ms-2 mb-1"></p>
+
+            <div class="row second gap-2 p-3">
+                <div id="all" class="col bg-primary-subtle text-primary ">All</div>
+                <div id="active" class="col bg-light"></div>
+                <div id="done" class="col bg-light">Done</div>
+            </div>
+
+            <div id="tasks">
+                <div class="inputs mb-2 d-flex justify-content-space-between task">
+                    <p class="col text-start mt-1"><input name="check" class="ms-2 me-2" type="checkbox">
+                        Learn ES6 destructuring </p>
+                    <button class="delete text-end">Delete</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
